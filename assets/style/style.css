@@ -1,0 +1,319 @@
+ body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #354240;
+      text-align: center;
+  }
+
+/* all content p */
+  p {
+    font-size: 18px;
+  }
+
+/* giving an offset height from top for bg image to start flush from navbar */
+  .offset-top {
+    height: 80px;
+    background-color: #273742;
+  }
+
+/* navbar css */
+.navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 13px;
+      letter-spacing: 5px;
+      background-color: #273742;
+      color: white;
+      font-weight: 500;
+  }
+
+/* nav right links hover color */
+.navbar-nav  li a:hover {
+      color: #18bc9c !important;  
+  }
+
+/* nav right links css */
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-weight: bolder;
+  }
+
+/* navbar brand css */
+  .navbar-default .navbar-brand {
+    color: white;
+    font-weight: 900; 
+  }
+
+/* overriding navbar brand's default dark color after clicking */
+  .navbar-default .navbar-brand:visited {
+    color:white;
+  }
+
+/* navbar brand color when hovered on */
+  .navbar-default .navbar-brand:hover {
+      color: #60eacf;
+  }
+
+ /* */
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+
+  .navbar-default .navbar-toggle:hover {
+    background-color: #60eafc;
+  }
+
+
+  #intro {
+    background-image: url("../images/charlottesky.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: auto;
+  }
+
+  section h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 30px;  
+  }
+
+  #intro, #portfolio {
+    background-color: #c4fcf5;
+    min-height: 400px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+
+  #about, #contact {
+    background-color: #c9f0ff;
+    min-height: 400px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+
+  #photo {
+    height:200px;
+    width:200px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+   #aboutme {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+
+  #image-holder .thumbnail {
+      background-color: #c4fcf5;
+  }
+
+  .img-thumbnail, .thumbnail {
+    border: 0px;
+  }
+
+#image-holder a>img {  
+    width:300px;
+    height:200px;
+    box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+    margin:5% auto 0 auto; 
+    overflow:hidden;
+}
+
+  footer {
+    background-color: #4c6677;
+      color: white;
+      padding-top: 10px;
+  }
+
+  .bottom-footer {
+    background-color: #273742;
+  }
+
+  body.modal-open {
+    overflow: visible;
+}
+
+.navbar {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.navbar.scrolled {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(105,137,159,1.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+nav.navbar.shrink {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.btn-social {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+.btn-outline {
+    color: #fff;
+    font-size: 40px;
+    border: 2px solid #fff;
+    background: 0 0;
+  }
+
+  .btn-social:hover {
+    color: #18BC9C;
+    background-color: white;
+    outline: 0;
+}
+
+  .btn-social:active {
+    color: #60eacf;
+  }
+  
+  .bounce:hover {
+     -webkit-animation-name: bounce; /* Safari 4.0 - 8.0 */
+    animation-name: bounce;
+  }
+
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+    @-webkit-keyframes bounce {
+     0%,
+     100% {
+         -webkit-transform: translateY(0);
+     }
+     15% {
+         -webkit-transform: translateY(-30px);
+     }
+     30% {
+         -webkit-transform: translateY(30px);
+     }
+     45% {
+         -webkit-transform: translateY(-20px);
+     }
+     60% {
+         -webkit-transform: translateY(20px);
+     }
+     75% {
+         -webkit-transform: translateY(-10px);
+     }
+     90% {
+         -webkit-transform: translateY(10px);
+     }
+ }
+ 
+ @keyframes bounce {
+    0%,
+     100% {
+         transform: translateY(0);
+     }
+     15% {
+         transform: translateY(-30px);
+     }
+     30% {
+         transform: translateY(30px);
+     }
+     45% {
+         transform: translateY(-20px);
+     }
+     60% {
+         transform: translateY(20px);
+     }
+     75% {
+         transform: translateY(-10px);
+     }
+     90% {
+         transform: translateY(10px);
+     }
+ }
+
+
+
+/*.btn-social:focus{
+    color: #18BC9C;
+    outline: 0;
+}
+
+.git:hover {
+
+}
+
+.linked:hover {
+  
+}
+
+.stack:hover {
+}*/
+
+/* fixing navbar hover colors from default grey in bootstrap.less to custom */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #60eacf;
+}
+
+.top-footer {
+  height: 110px;
+  padding-top: 10px;
+}
+
+.top-footer h3{
+   padding-top: 10px;
+}
+
+.thumbnail {
+  display: inline-block !important;
+  position: relative !important;
+  overflow: hidden;
+}
+
+.thumbnail-overlay {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.thumbnail:hover .thumbnail-overlay {
+  display: inline;
+  text-align: center;
+  position: absolute;
+  transition: background 0.2s ease, padding 0.8s linear;
+  background-color: rgba(69, 173, 153, 0.38);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  right: 0px;
+}
+
+.thumbnail-overlay span {
+  position: relative;
+  top: 20%;
+}
