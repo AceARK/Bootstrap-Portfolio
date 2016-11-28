@@ -219,6 +219,11 @@
   .btn-social:active {
     color: #60eacf;
   }
+
+/* changing color of visited links */
+  .list-inline a:focus {
+    color: #60eacf;
+  }
   
   /* Animation CSS */
   /* class definition for social buttons' animation on hover */
