@@ -4,22 +4,29 @@
 <head>
     <title>Portoflio Bootstrap | Akhila</title>
     <meta charset="utf-8">
+    <!-- meta for responsive content -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- linking stylesheets used -->
     <link rel="stylesheet" type="text/css" href="assets/style/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- linking google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <!-- linking font awesome icons -->
+    <link rel="stylesheet" href="assets/style/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap and jquery js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset=60>
     <!-- Navbar with name, and links to pages -->
     <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-header">
+            	<!-- menu bar toggle icon in mobile/ responsive view -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -37,9 +44,12 @@
         </div>
     </nav>
     <!-- Content begins -->
+
+    <!-- offset top to accomodate for background not being covered by navbar -->
     <div class="row">
         <div class="offset-top col-md-12"></div>
     </div>
+    <!-- background image -->
     <div id="intro" class="container-fluid hidden-md hidden-sm hidden-xs">
     </div>
     <!-- About me page -->
@@ -76,6 +86,7 @@
             </div>
         </div>
     </div>
+
     <!-- Portfolio page -->
     <div id="portfolio" class="container-fluid">
         <div class="container">
@@ -84,12 +95,15 @@
                     <h1>PORTFOLIO</h1>
                 </div>
             </div>
+			
+			<!-- row 1 of portfolio div -->
             <div class="row">
                 <div id="image-holder" class="col-md-12">
                     <div class="row">
                         <div class="col-md-3 col-sm-6 col-xs-12">
                         	<div class="thumbnail">
-                        		<a href="#" data-toggle="modal" data-target="#modal1">
+                        		<!-- using data attributes to populate modal template -->
+                        		<a href="#" data-toggle="modal" data-target="#modal-portfolio" data-title="Project One" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit" data-date="12/26/2016" data-projectimage="assets/images/pic1.jpg" data-client="Company One">
                         			<!-- placing overlay on hover -->
                         			<div class="thumbnail-overlay">
                                 		<span class="center-block">
@@ -106,7 +120,8 @@
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                            <div class="thumbnail">
-                        		<a href="#" data-toggle="modal" data-target="#modal2">
+                           		<!-- using data attributes to populate modal template -->
+                        		<a href="#" data-toggle="modal" data-target="#modal-portfolio" data-title="Project Two" data-content="In animi, vero iusto, architecto facere inventore praesentium similique." data-date="1/22/2017" data-projectimage="assets/images/pic2.jpg" data-client="Company Two">
                         			<!-- placing overlay on hover -->
                         			<div class="thumbnail-overlay">
                                 		<span class="center-block">
@@ -123,7 +138,8 @@
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="thumbnail">
-                        		<a href="#" data-toggle="modal" data-target="#modal3">
+                            	<!-- using data attributes to populate modal template -->
+                        		<a href="#" data-toggle="modal" data-target="#modal-portfolio" data-title="Project Three" data-content="Ullam blanditiis delectus quia, animi voluptas possimus labore" data-date="2/16/2017" data-projectimage="assets/images/pic3.jpg" data-client="Company Three">
                         			<!-- placing overlay on hover -->
                         			<div class="thumbnail-overlay">
                                 		<span class="center-block">
@@ -140,7 +156,8 @@
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="thumbnail">
-                        		<a href="#" data-toggle="modal" data-target="#modal4">
+                            	<!-- using data attributes to populate modal template -->
+                        		<a href="#" data-toggle="modal" data-target="#modal-portfolio" data-title="Project Four" data-content="Ullam blanditiis delectus quia, animi voluptas possimus labore" data-date="3/16/2017" data-projectimage="assets/images/pic4.jpg" data-client="Company Four">
 									<!-- placing overlay on hover -->
                         			<div class="thumbnail-overlay">
                                 		<span class="center-block">
@@ -156,10 +173,12 @@
                         	</div>
                         </div>
                     </div>
+                    <!-- row 2 of portfolio div -->
                     <div class="row">
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="thumbnail">
-                        		<a href="#" data-toggle="modal" data-target="#modal5">
+                            	<!-- using data attributes to populate modal template -->
+                        		<a href="#" data-toggle="modal" data-target="#modal-portfolio" data-title="Project Five" data-content="Ullam blanditiis delectus quia, animi voluptas possimus labore" data-date="4/27/2017" data-projectimage="assets/images/pic5.jpg" data-client="Company Five">
                         			<!-- placing overlay on hover -->
                         			<div class="thumbnail-overlay">
                                 		<span class="center-block">
@@ -176,15 +195,18 @@
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="thumbnail">
-                        		<a href="#" data-toggle="modal" data-target="#modal6">
+                            	<!-- TBD future project -->
+                            	<!-- using data attributes to populate modal template -->
+                            	<!-- cutting link to modal by removing data-toggle and -target attributes -->
+                        		<a class="disabled" data-title="Project Six" data-content="Ullam blanditiis delectus quia, animi voluptas possimus labore" data-date="6/16/2017" data-projectimage="assets/images/pic6.jpg" data-client="Company Six">
                         			<!-- placing overlay on hover -->
                         			<div class="thumbnail-overlay">
                                 		<span class="center-block">
 	                                		<p>
-	                                			Project Six
+	                                			
 	                                		</p>
 	                                		<!-- using 3x large icons fa-3x -->
-	                                		<i class="fa fa-info-circle fa-3x" aria-hidden="true"></i>
+	                                		<i class="fa fa-exclamation-circle fa-3x" aria-hidden="true"></i>
 	                                	</span>
                                 	</div>
                                 	<img class="img-responsive img-thumbnail" src="assets/images/pic6.jpg">
@@ -193,15 +215,18 @@
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="thumbnail">
-                        		<a href="#" data-toggle="modal" data-target="#modal7">
+                            	<!-- TBD future project -->
+                            	<!-- using data attributes to populate modal template -->
+                            	<!-- cutting link to modal by removing data-toggle and -target attributes -->
+                        		<a class="disabled" data-title="Project Seven" data-content="Ullam blanditiis delectus quia, animi voluptas possimus labore" data-date="7/16/2017" data-projectimage="assets/images/pic7.jpg" data-client="Company Seven">
                         			<!-- placing overlay on hover -->
                         			<div class="thumbnail-overlay">
                                 		<span class="center-block">
 	                                		<p>
-	                                			Project Seven
+	                                			
 	                                		</p>
 	                                		<!-- using 3x large icons fa-3x -->
-	                                		<i class="fa fa-info-circle fa-3x" aria-hidden="true"></i>
+	                                		<i class="fa fa-exclamation-circle fa-3x" aria-hidden="true"></i>
 	                                	</span>
                                 	</div>
                                 	<img class="img-responsive img-thumbnail" src="assets/images/pic7.jpg">
@@ -210,15 +235,18 @@
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="thumbnail">
-                        		<a href="#" data-toggle="modal" data-target="#modal8">
+                            	<!-- TBD future project -->
+                            	<!-- using data attributes to populate modal template -->
+                            	<!-- cutting link to modal by removing data-toggle and -target attributes -->
+                        		<a class="disabled" data-title="Project Eight" data-content="Ullam blanditiis delectus quia, animi voluptas possimus labore" data-date="9/16/2017" data-projectimage="assets/images/pic8.jpg" data-client="Company Eight">
                         			<!-- placing overlay on hover -->
                         			<div class="thumbnail-overlay">
                                 		<span class="center-block">
 	                                		<p>
-	                                			Project Eight
+	                                			
 	                                		</p>
 	                                		<!-- using 3x large icons fa-3x -->
-	                                		<i class="fa fa-info-circle fa-3x" aria-hidden="true"></i>
+	                                		<i class="fa fa-exclamation-circle fa-3x" aria-hidden="true"></i>
 	                                	</span>
                                 	</div>
                                 	<img class="img-responsive img-thumbnail" src="assets/images/pic8.jpg">
@@ -232,29 +260,23 @@
     </div>
 
 
-    <!-- Portfolio modals -->
-    <!-- Modal 1 -->
-    <div class="modal fade" id="modal1" role="dialog">
+    <!-- Portfolio modals made dynamic using bootstrap js (modal data attributes and jquery) -->
+    <!-- Modal template -->
+    <div class="modal fade" id="modal-portfolio" role="dialog">
         <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Project One</h4>
+                    <h4 class="modal-title"></h4>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/images/pic1.jpg" class="img-responsive center-block">
+                    <img class="img-responsive center-block">
                     <p>
-                        Short description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repellendus, ut, qui quo, distinctio molestias nisi obcaecati, sapiente veritatis numquam ad. Esse omnis ex, a ab nostrum labore dolore placeat. View the project <a href="#">here</a>.
                     </p>
                     <ul class="list-inline">
-                        <li>
-                            Client:
+                        <li class="client">
                         </li>
-                        <li>
-                            Date:
-                        </li>
-                        <li>
-                            Service:
+                        <li class="date">
                         </li>
                     </ul>
                 </div>
@@ -264,130 +286,7 @@
             </div>
         </div>
     </div>
-    <!-- Modal 2 -->
-    <div class="modal fade" id="modal2" role="dialog">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Project Two</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/pic2.jpg" class="img-responsive center-block">
-                    <p>
-                        Short description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repellendus, ut, qui quo, distinctio molestias nisi obcaecati, sapiente veritatis numquam ad. Esse omnis ex, a ab nostrum labore dolore placeat. View the project <a href="#">here</a>.
-                    </p>
-                    <ul class="list-inline">
-                        <li>
-                            Client:
-                        </li>
-                        <li>
-                            Date:
-                        </li>
-                        <li>
-                            Service:
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-info text-center" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 3 -->
-    <div class="modal fade" id="modal3" role="dialog">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Project Three</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/pic3.jpg" class="img-responsive center-block">
-                    <p>
-                        Short description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repellendus, ut, qui quo, distinctio molestias nisi obcaecati, sapiente veritatis numquam ad. Esse omnis ex, a ab nostrum labore dolore placeat. View the project <a href="#">here</a>.
-                    </p>
-                    <ul class="list-inline">
-                        <li>
-                            Client:
-                        </li>
-                        <li>
-                            Date:
-                        </li>
-                        <li>
-                            Service:
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-info text-center" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 4 -->
-    <div class="modal fade" id="modal4" role="dialog">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Project Four</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/pic4.jpg" class="img-responsive center-block">
-                    <p>
-                        Short description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repellendus, ut, qui quo, distinctio molestias nisi obcaecati, sapiente veritatis numquam ad. Esse omnis ex, a ab nostrum labore dolore placeat. View the project <a href="#">here</a>.
-                    </p>
-                    <ul class="list-inline">
-                        <li>
-                            Client:
-                        </li>
-                        <li>
-                            Date:
-                        </li>
-                        <li>
-                            Service:
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-info text-center" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 5 -->
-    <div class="modal fade" id="modal5" role="dialog">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Project Five</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/pic5.jpg" class="img-responsive center-block">
-                    <p>
-                        Short description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repellendus, ut, qui quo, distinctio molestias nisi obcaecati, sapiente veritatis numquam ad. Esse omnis ex, a ab nostrum labore dolore placeat. View the project <a href="#">here</a>.
-                    </p>
-                    <ul class="list-inline">
-                        <li>
-                            Client:
-                        </li>
-                        <li>
-                            Date:
-                        </li>
-                        <li>
-                            Service:
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-info text-center" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- Contact page -->
     <div id="contact" class="container-fluid">
         <div class="container">
@@ -397,8 +296,8 @@
                 </div>
             </div>
             <div class="row text-left">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
+                <div class="col-md-8 col-md-offset-2">
+                	<!-- bootstrap form -->
                     <form>
                         <div class="form-group">
                             <label for="usr">Name</label>
@@ -413,13 +312,14 @@
                         <button type="submit" class="btn-lg btn-info center-block">Submit</button>
                     </form>
                 </div>
-                <div class="col-md-2"></div>
             </div>
         </div>
     </div>
+
     <!-- Footer -->
     <footer class="container-fluid text-center">
     	<div class="container">
+    		<!-- top footer for connect options -->
 	        <div class="row top-footer">
 	        	<div id="footerlabel" class="col-md-3 col-md-offset-3 col-xs-12">
 	        		<h3>CONNECT VIA</h3>
@@ -441,16 +341,18 @@
 	            </div>
 	        </div>
 	    </div>
+	    	<!-- bottom footer for copyright -->
 	        <div class="row bottom-footer">
 	            <div class="col-md-12">
 	                <p><small>&copy; Akhila Radhakrishnan 2016</small></p>
 	            </div>
 	        </div>
     </footer>
-    <!-- Javascript for scrollspy -->
+
     <script>
+    // Javascript for scrollspy
     /**
-     * Listen to scroll to change header opacity class
+     * Listen to scroll to change header color class
      */
     function checkScroll() {
         var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
@@ -491,12 +393,36 @@
                 });
             } // End if
         });
-    })
 
+        // event to register modal window 
+        $('#modal-portfolio').on('show.bs.modal', function (event) { 
+        	// Link that triggered the modal
+	        var clickedPortfolio = $(event.relatedTarget);
+	        // Extract info from data-* attributes 
+	        var title = clickedPortfolio.data('title'); 
+	        var content = clickedPortfolio.data('content');
+	        var image = clickedPortfolio.data('projectimage');
+	        var date = clickedPortfolio.data('date');
+	        var client = clickedPortfolio.data('client');
+	        
+	        // Update the modal's content using jQuery 
+	        var portfolioModal = $(this); 
+	        portfolioModal.find('.modal-title').text(title); 
+	        portfolioModal.find('.modal-body p').text(content); 
+	        portfolioModal.find('.modal-body img').attr('src', image);
+	        portfolioModal.find('.modal-body .client').text("Client: " + client);
+	        portfolioModal.find('.modal-body .date').text("Date: " + date);
+    	});
+
+	});
+
+    // event handling for window scroll
     $(window).scroll(function() {
         if ($(document).scrollTop() > 50) {
+        	// add shrink to class
             $('nav').addClass('shrink');
         } else {
+        	// remove shrink from class
             $('nav').removeClass('shrink');
         }
     }); 

@@ -43,8 +43,12 @@
 
 /* navbar brand css */
   .navbar-default .navbar-brand {
-    color: white;
-    font-weight: 900; 
+    color: white; 
+  }
+
+  /* overriding navbar brand font size */
+  .navbar-brand {
+    font-size: 25px;
   }
 
 /* overriding navbar brand's default dark color after clicking */
@@ -57,15 +61,48 @@
       color: #60eacf;
   }
 
- /* */
+ /* menu bar on responsive/ mobile view color change */
   .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
   }
 
+  /* menu bar on responsive/ mobile view color change on hover */
   .navbar-default .navbar-toggle:hover {
-    background-color: #60eafc;
+    background-color: #60eacf;
   }
 
+
+  /* navbar color and length transition ease */
+  .navbar {
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      -ms-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+  }
+
+  /* navbar color change class definition on scroll */
+  .navbar.scrolled {
+      border-width: 0px;
+      -webkit-box-shadow: 0px 0px;
+      box-shadow: 0px 0px;
+      background-color: rgba(105,137,159,1.0);
+      background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+      background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+      background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+  }
+
+  /* navbar size change class definition on scroll */
+  nav.navbar.shrink {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  /* fixing navbar hover colors from default grey in bootstrap.less to custom */
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+      color: #fff;
+      background-color: #60eacf;
+  }
 
   #intro {
     background-image: url("../images/charlottesky.jpg");
@@ -73,12 +110,13 @@
     background-size: 100%;
     height: auto;
   }
-
+  
   section h3 {
     padding-bottom: 20px;
     text-align: center;
     font-family: 'Courgette', cursive;
     font-size: 30px;  
+    color: #000;
   }
 
   #intro, #portfolio {
@@ -119,51 +157,38 @@
     border: 0px;
   }
 
-#image-holder a>img {  
-    width:300px;
-    height:200px;
-    box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
-    margin:5% auto 0 auto; 
-    overflow:hidden;
-}
-
-  footer {
-    background-color: #4c6677;
-      color: white;
-      padding-top: 10px;
+  /* adding custom border to thumbnail and resizing */
+  #image-holder a>img {  
+      width:300px;
+      height:200px;
+      box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+      margin:5% auto 0 auto; 
+      overflow:hidden;
   }
 
+    footer {
+      background-color: #4c6677;
+        color: white;
+        padding-top: 10px;
+  }
+
+/* overriding footer color to darken bottom footer */
   .bottom-footer {
     background-color: #273742;
   }
 
-  body.modal-open {
-    overflow: visible;
-}
 
-.navbar {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
+  .top-footer {
+    height: 110px;
+    padding-top: 10px;
+  }
 
-.navbar.scrolled {
-    border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background-color: rgba(105,137,159,1.0);
-    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-}
+  .top-footer h3{
+     padding-top: 10px;
+  }
 
-nav.navbar.shrink {
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
 
+/* github, stackoverflow, linkedin icon css */
 .btn-social {
     width: 60px;
     height: 60px;
@@ -175,6 +200,7 @@ nav.navbar.shrink {
     line-height: 60px;
   }
 
+/* outline of social icons */
 .btn-outline {
     color: #fff;
     font-size: 40px;
@@ -182,27 +208,32 @@ nav.navbar.shrink {
     background: 0 0;
   }
 
+/* on hover */
   .btn-social:hover {
     color: #18BC9C;
     background-color: white;
     outline: 0;
 }
 
+/* when active */
   .btn-social:active {
     color: #60eacf;
   }
   
+  /* Animation CSS */
+  /* class definition for social buttons' animation on hover */
   .bounce:hover {
      -webkit-animation-name: bounce; /* Safari 4.0 - 8.0 */
     animation-name: bounce;
   }
 
+/* class to specify animation duration */
   .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
 }
+
+/* CSS Animation for social buttons */
 
     @-webkit-keyframes bounce {
      0%,
@@ -255,38 +286,7 @@ nav.navbar.shrink {
  }
 
 
-
-/*.btn-social:focus{
-    color: #18BC9C;
-    outline: 0;
-}
-
-.git:hover {
-
-}
-
-.linked:hover {
-  
-}
-
-.stack:hover {
-}*/
-
-/* fixing navbar hover colors from default grey in bootstrap.less to custom */
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #60eacf;
-}
-
-.top-footer {
-  height: 110px;
-  padding-top: 10px;
-}
-
-.top-footer h3{
-   padding-top: 10px;
-}
-
+/* portfolio overlay on hover css */
 .thumbnail {
   display: inline-block !important;
   position: relative !important;
@@ -316,4 +316,23 @@ nav.navbar.shrink {
 .thumbnail-overlay span {
   position: relative;
   top: 20%;
+}
+
+
+/* portfolio modal template css */
+.modal-content {
+  line-height: 20px;
+}
+
+.modal-content ul>li {
+  padding: 30px;
+}
+
+.modal-content img {
+  margin-bottom: 30px;
+}
+
+/* cursor customization for future/blank portfolio projects */
+.disabled {
+  cursor: not-allowed;
 }
