@@ -245,23 +245,8 @@
      100% {
          -webkit-transform: translateY(0);
      }
-     15% {
-         -webkit-transform: translateY(-30px);
-     }
-     30% {
-         -webkit-transform: translateY(30px);
-     }
-     45% {
-         -webkit-transform: translateY(-20px);
-     }
-     60% {
-         -webkit-transform: translateY(20px);
-     }
-     75% {
+     50% {
          -webkit-transform: translateY(-10px);
-     }
-     90% {
-         -webkit-transform: translateY(10px);
      }
  }
  
@@ -270,26 +255,20 @@
      100% {
          transform: translateY(0);
      }
-     15% {
-         transform: translateY(-30px);
-     }
-     30% {
-         transform: translateY(30px);
-     }
-     45% {
-         transform: translateY(-20px);
-     }
-     60% {
-         transform: translateY(20px);
-     }
-     75% {
+     50% {
          transform: translateY(-10px);
-     }
-     90% {
-         transform: translateY(10px);
      }
  }
 
+#portfolio-content {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.col-sm-6, .col-md-3, .col-xs-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 /* portfolio overlay on hover css */
 .thumbnail {
