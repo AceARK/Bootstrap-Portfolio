@@ -7,7 +7,11 @@
 
 /* all content p */
   p {
-    font-size: 18px;
+    font-size: 17px;
+  }
+
+  .side {
+    font-size: 16px;
   }
 
 /* giving an offset height from top for bg image to start flush from navbar */
