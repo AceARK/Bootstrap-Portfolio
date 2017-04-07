@@ -324,3 +324,19 @@
 .disabled {
   cursor: not-allowed;
 }
+
+.modal-body {
+  padding: 40px;
+}
+
+.date {
+  margin-top: 40px;
+}
+
+.contentLabel {
+  font-weight: 800;
+}
+
+.content, .date {
+  font-weight: 300;
+}
