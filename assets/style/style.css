@@ -102,6 +102,10 @@
     padding-bottom: 3px;
   }
 
+  nav.navbar.shrink>.container>.navbar-header>.navbar-brand {
+    font: 20px Helvetica, sans-serif;
+  }
+
   /* fixing navbar hover colors from default grey in bootstrap.less to custom */
   .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
       color: #fff;
