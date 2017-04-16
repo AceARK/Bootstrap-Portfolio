@@ -181,6 +181,12 @@
     background-color: #273742;
   }
 
+  .bottom-footer p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+  }
+
 
   .top-footer {
     height: 110px;
