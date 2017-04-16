@@ -340,3 +340,27 @@
 .content, .date {
   font-weight: 300;
 }
+
+.contactIcons {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contactRow {
+  margin-top: 20px;
+}
+
+.in-view.fa-phone {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 1.2s, opacity 0.4s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.in-view.fa-envelope-o {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 1.7s, opacity 0.3s ease-in-out;
+  transition-delay: 0.4s;
+}
+

@@ -372,26 +372,23 @@
     <div id="contact" class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                 <div class="col-md-12">
                     <h1>CONTACT</h1>
                 </div>
             </div>
-            <div class="row text-left">
+            <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                	<!-- bootstrap form -->
-                    <form action="mailto:akhilark1088@gmail.com" method="post" enctype="text/plain">
-                        <div class="form-group">
-                            <label for="usr">Name</label>
-                            <input type="text" class="input-lg form-control" id="name" placeholder="John Smith">
-                        </div>
-                        <label for="email">Email address</label>
-                        <input type="email" class="input-lg form-control" id="email" placeholder="example@mail.com">
-                        <div class="form-group">
-                            <label for="comment">Comment</label>
-                            <textarea class="form-control input-lg" rows="5" id="comment"></textarea>
-                        </div>
-                        <button type="submit" class="btn-lg btn-info center-block">Submit</button>
-                    </form>
+                    <p>I am looking for a job and ready to hire. Contact me anytime via phone or email.</p>
+                </div>
+            </div>
+            <div class="row contactRow">
+                 <div class="col-sm-4 col-sm-offset-2 text-center">
+                    <i class="fa fa-phone fa-2x contactIcons"></i>
+                    <p><strong>(614)806-6723</strong></p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-envelope-o fa-2x contactIcons"></i>
+                    <p><a href="mailto:akhilark1088@gmail.com"><strong>akhilark1088@gmail.com</strong></a></p>
                 </div>
             </div>
         </div>
@@ -497,10 +494,16 @@
 	        portfolioModal.find('.modal-body .date').text(date);
     	});
 
-	});
+    });
+
+
+    // Referencing elements for animation
+    var $animation_elements = $('.contactIcons');
+    var $window = $(window);
 
     // event handling for window scroll
     $(window).scroll(function() {
+        check_if_in_view();
         if ($(document).scrollTop() > 50) {
         	// add shrink to class
             $('nav').addClass('shrink');
@@ -509,6 +512,29 @@
             $('nav').removeClass('shrink');
         }
     }); 
+
+    // $window.on('scroll', check_if_in_view);
+
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+
+      $.each($animation_elements, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+          $element.addClass('in-view');
+        } else {
+          $element.removeClass('in-view');
+        }
+      });
+    }
 
     </script>
 </body>
