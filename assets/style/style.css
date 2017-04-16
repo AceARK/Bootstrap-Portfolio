@@ -355,6 +355,10 @@
   visibility: visible;
   transition: visibility 1.2s, opacity 0.4s ease-in-out;
   transition-delay: 0.2s;
+  -moz-transition: visibility 1.2s, opacity 0.4s ease-in-out;
+  -moz-transition-delay: 0.2s;
+  -webkit-transition: visibility 1.2s, opacity 0.4s ease-in-out;
+  -webkit-transition-delay: 0.2s;
 }
 
 .in-view.fa-envelope-o {
@@ -362,5 +366,9 @@
   visibility: visible;
   transition: visibility 1.7s, opacity 0.3s ease-in-out;
   transition-delay: 0.4s;
+  -moz-transition: visibility 1.7s, opacity 0.3s ease-in-out;
+  -moz-transition-delay: 0.4s;
+  -webkit-transition: visibility 1.7s, opacity 0.3s ease-in-out;
+  -webkit-transition-delay: 0.4s;
 }
 
