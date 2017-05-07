@@ -201,6 +201,11 @@
      padding-top: 10px;
   }
 
+.skillSet {
+  font-size: 16px;
+  font-weight: 900;
+  text-align-last: left;
+}
 
 /* github, stackoverflow, linkedin icon css */
 .btn-social {
