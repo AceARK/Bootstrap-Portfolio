@@ -62,32 +62,37 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <section>
-                        <h3>Full Stack Web Developer</h3>
-                    </section>
+                <div class="col-md-4" id="photoDiv">
+                    <div id="backgroundPhotoHigherDiv">
+                        <img class="img-responsive img-thumbnail photo" src="assets/images/picRestaurant.png">
+                    </div>
+                    <div id="mainPhotoDiv">
+                        <img class="img-responsive img-thumbnail photo" src="assets/images/picAngled.png">
+                    </div>
+                    <div id="backgroundPhotoLowerDiv">
+                        <img class="img-responsive img-thumbnail photo" src="assets/images/photoRestaurant.jpg">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <img id="photo" class="img-responsive img-thumbnail center-block" src="assets/images/photo.jpg">
-                </div>
-                <div class="col-md-8">
-                    <p class="side content text-left">
-                        I'm a passionate web developer, proficient in CSS, HTML and Javascript technologies. Love creating pretty and eye-catching UI combined with good usability and user experience. Have experience using front end development frameworks for styling, responsive web design, client side scripting and server side programming.
-                    </p>
-                    <p class="side content text-left">
-                       A graduate in Electronics and Communication Engineering with more than 2 years' professional experience in software development as a consulatant for a major American financial firm.
-                    </p>
-                    <p class="side content text-left">
-                        When not coding, painting and craftwork are my go-to hobbies.  
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    
-                    
+
+                <div class="col-md-8 contentDiv">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <section>
+                                <h3>Full Stack Web Developer</h3>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="side content text-left">
+                            I'm a passionate web developer, proficient in CSS, HTML and Javascript technologies. Love creating pretty and eye-catching UI combined with good usability and user experience. Have experience using front end development frameworks for styling, responsive web design, client side scripting and server side programming.
+                        </p>
+                        <p class="side content text-left">
+                           A graduate in Electronics and Communication Engineering with more than 2 years' professional experience in software development as a consulatant for a major American financial firm.
+                        </p>
+                        <p class="side content text-left">
+                            When not coding, painting and craftwork are my go-to hobbies.  
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -95,7 +100,7 @@
                     <p class="content text-left">
                     <strong>Technical Skills:</strong>
                     <ul class="skillSet">
-                        <li>HTML, CSS, JavaScript, ReactJS</li>
+                        <li>HTML, CSS, JavaScript, React, Redux</li>
                         <li>Bootstrap, Bootstrap Themes, Responsive Design, jQuery</li>
                         <li>Node.js, Express.js, AJAX, JSON, Handlebars.js</li>
                         <li>NPM packages - inquirer, express-session, express-validator, crypto, request, cheerio, mongojs, mysql, sequelize, socket.io, victory</li>
@@ -477,6 +482,12 @@
                     window.location.hash = hash;
                 });
             } // End if
+
+            // $(".thumbnail").on("hover", function(event) {
+            //     $(this).addClass("hover");
+            // }, function(){
+            //     $(this).removeClass("hover");
+            // });
         });
 
         // event to register modal window 

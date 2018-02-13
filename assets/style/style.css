@@ -118,10 +118,14 @@
     background-size: 100%;
     height: auto;
   }
+
+  .contentDiv {
+    padding-left: 30px;
+  }
   
   section h3 {
     padding-bottom: 20px;
-    text-align: center;
+    text-align: left;
     font-family: 'Courgette', cursive;
     font-size: 30px;  
     color: #000;
@@ -141,10 +145,46 @@
     padding-top: 40px;
   }
 
-  #photo {
-    height:200px;
-    width:200px;
-    margin-bottom: 20px;
+  .photo {
+    max-height: 200px;
+    max-width: 200px;
+    height:100%;
+    width:100%;
+  }
+
+  #photoDiv {
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 350px;
+  }
+
+  #backgroundPhotoHigherDiv, #mainPhotoDiv, #backgroundPhotoLowerDiv {
+    position: absolute;
+  }
+
+  #backgroundPhotoHigherDiv {
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 185px;
+    border: 3px solid white;
+    filter: blur(3px);
+  }
+
+  #mainPhotoDiv {
+    z-index: 3;
+    top: 50px;
+    left: 73px;
+  }
+
+  #backgroundPhotoLowerDiv {
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 185px;
+    border: 3px solid white;
+    filter: blur(3px);
   }
 
   h1 {
