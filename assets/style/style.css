@@ -159,11 +159,11 @@
     width: 350px;
   }
 
-  #backgroundPhotoHigherDiv, #mainPhotoDiv, #backgroundPhotoLowerDiv {
+  #higherPhotoDiv, #mainPhotoDiv, #lowerPhotoDiv {
     position: absolute;
   }
 
-  #backgroundPhotoHigherDiv {
+  #higherPhotoDiv {
     right: 0;
     top: 0;
     z-index: 1;
@@ -178,7 +178,7 @@
     left: 73px;
   }
 
-  #backgroundPhotoLowerDiv {
+  #lowerPhotoDiv {
     left: 0;
     bottom: 0;
     z-index: 2;

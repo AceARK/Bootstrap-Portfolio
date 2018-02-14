@@ -63,13 +63,13 @@
             </div>
             <div class="row">
                 <div class="col-md-4" id="photoDiv">
-                    <div id="backgroundPhotoHigherDiv">
+                    <div id="higherPhotoDiv">
                         <img class="img-responsive img-thumbnail photo" src="assets/images/picRestaurant.png">
                     </div>
                     <div id="mainPhotoDiv">
                         <img class="img-responsive img-thumbnail photo" src="assets/images/picAngled.png">
                     </div>
-                    <div id="backgroundPhotoLowerDiv">
+                    <div id="lowerPhotoDiv">
                         <img class="img-responsive img-thumbnail photo" src="assets/images/photoRestaurant.jpg">
                     </div>
                 </div>
@@ -101,11 +101,11 @@
                     <strong>Technical Skills:</strong>
                     <ul class="skillSet">
                         <li>HTML, CSS, JavaScript, React, Redux</li>
-                        <li>Bootstrap, Bootstrap Themes, Responsive Design, jQuery</li>
+                        <li>Bootstrap, Sass, Bootstrap Themes, Responsive Design, jQuery</li>
                         <li>Node.js, Express.js, AJAX, JSON, Handlebars.js</li>
                         <li>NPM packages - inquirer, express-session, express-validator, crypto, request, cheerio, mongojs, mysql, sequelize, socket.io, victory</li>
                         <li>MySQL, Google Firebase, Sequelize ORM, MongoDB, Mongoose ORM</li>
-                        <li>Git, Github, Terminal, Heroku, jawsDB, mLab</li>
+                        <li>Git, Subversion, Github, Bitbucket, Terminal, JIRA, Heroku, jawsDB, mLab</li>
                     </ul>
                     </p>
                 </div>
@@ -490,30 +490,6 @@
             // });
         });
 
-        // event to register modal window 
-        $('#modal-portfolio').on('show.bs.modal', function (event) { 
-        	// Link that triggered the modal
-	        var clickedPortfolio = $(event.relatedTarget);
-	        // Extract info from data-* attributes 
-	        var title = clickedPortfolio.data('title'); 
-	        var content = clickedPortfolio.data('content');
-	        var image = clickedPortfolio.data('projectimage');
-	        var date = clickedPortfolio.data('date');
-            var githubLink = clickedPortfolio.data('github');
-            var link = clickedPortfolio.data('url');
-            var linkContent = clickedPortfolio.data('links');
-            var linkString = "<a target='_blank' href='" + githubLink + "'>Github page <i class='fa fa-code fa-lg' aria-hidden='true'></i></a>. Click <a target='_blank' href='" + link + "'>here <i class='fa fa-lg fa-external-link' aria-hidden='true'></i></a> to check it out.";
-	        
-	        // Update the modal's content using jQuery 
-	        var portfolioModal = $(this); 
-	        portfolioModal.find('.modal-title').text(title); 
-	        portfolioModal.find('.modal-body .content').text(content); 
-            portfolioModal.find('.modal-body .linkData').text(linkContent);
-            portfolioModal.find('.modal-body .linkData').append(linkString);
-	        portfolioModal.find('.modal-body img').attr('src', image);
-	        portfolioModal.find('.modal-body .date').text(date);
-    	});
-
     });
 
 
@@ -555,6 +531,7 @@
     }
 
     </script>
+    <script src='index.js'></script>
 </body>
 
 </html>
