@@ -176,6 +176,17 @@
     z-index: 3;
     top: 50px;
     left: 73px;
+    animation: .3s ease-in-out slowBlur;
+  }
+
+  @keyframes slowBlur {
+    from {
+      filter: none;
+    }
+
+    to {
+      filter: blur(px);
+    }
   }
 
   #lowerPhotoDiv {

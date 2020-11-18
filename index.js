@@ -35,6 +35,13 @@ $(document).ready(function() {
 		const leftImage = leftPhotoDiv.find('img');
 		const middleImage = middlePhotoDiv.find('img');
 		const rightImage = rightPhotoDiv.find('img');
+
+		// blur middle image slowly before switching
+		// switch
+		// unblur middle image slowly
+
+		 
+
 		// blur higherPhotoDiv and mainPhoto div
 		// move lowerDiv img to mainPhoto div
 		middlePhotoDiv.empty();
